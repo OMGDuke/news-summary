@@ -13,8 +13,8 @@ describe("app", function() {
 
   it('displays all the headlines', function() {
     browser.get('/');
-    var article = $$('#articles').first().getText();
-    expect(article).toMatch('Free ice cream');
+    var article = $$('#articles').first().isPresent();
+    expect(article).toBe(true);
   });
 
   it('displays an image for the article', function() {
