@@ -13,10 +13,11 @@
 
   <body>
     <div ng-controller="NewsSummaryController as controller">
-      <h2 id='heading'>Todays Headlines for {{controller.today | date}}</h2>
-      <h4 id='articles' ng-repeat='article in controller.articles'>
-        {{article.headline}}
-      </h4>
+      <h2 id='title'>Todays Headlines for {{controller.today | date}}</h2>
+      <div id='articles' ng-repeat='article in controller.articles'>
+        <img id='thumb' src="{{article.imageUrl}}" alt="Image for {{article.headline}}" />
+        <h3 id='headline'>{{article.headline}}</h3>
+      </div>
 
     </div>
   </body>
