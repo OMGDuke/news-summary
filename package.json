@@ -20,5 +20,8 @@
     "karma-cli": "^1.0.0",
     "karma-jasmine": "^1.0.2",
     "protractor": "^3.3.0"
+  },
+  "devDependencies": {
+    "jasmine-spec-reporter": "^2.4.0"
   }
 }

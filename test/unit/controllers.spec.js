@@ -6,8 +6,4 @@ describe("NewsSummaryController", function() {
   beforeEach(inject(function($controller) {
     controller = $controller("NewsSummaryController");
   }));
-
-  it("makes exposes a greeting of 'Hello, world'", function() {
-    expect(controller.greeting).toEqual("Hello, world");
-  });
 });
