@@ -16,4 +16,9 @@ describe("app", function() {
     var article = $$('#articles').first().getText();
     expect(article).toMatch('Free ice cream');
   });
+
+  it('displays an image for the article', function() {
+    browser.get('/');
+    expect(element(by.id('thumb')).isPresent()).toBe(true);
+  });
 });
