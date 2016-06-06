@@ -21,4 +21,10 @@ describe("app", function() {
     browser.get('/');
     expect(element(by.id('thumb')).isPresent()).toBe(true);
   });
+
+  it('clicking a headline takes you to the article summary', function() {
+    browser.get('/');
+    $$('#articles').first().click();
+    expect(browser.getCurrentUrl()).toEqual('http://localhost:8080/article');
+  });
 });
